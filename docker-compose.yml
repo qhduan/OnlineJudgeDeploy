@@ -20,7 +20,7 @@ services:
       - POSTGRES_PASSWORD=onlinejudge
 
   judge-server:
-    image: qhduan/judge_server:qhd
+    image: "qhduan/judge_server:qhd"
     container_name: judge-server
     restart: always
     cap_drop:
@@ -43,7 +43,7 @@ services:
       - judger_debug=1
   
   oj-backend:
-    image: qhduan/oj_backend:qhd
+    image: "qhduan/oj_backend:qhd"
     container_name: oj-backend
     restart: always
     depends_on:
